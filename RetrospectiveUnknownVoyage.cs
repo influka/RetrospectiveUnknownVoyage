@@ -32,7 +32,7 @@ namespace RetrospectiveUnknownVoyage
 
         public void Initialize()
         {
-            CustomLocalizationManager.ImportCSV("influka/Disciple.csv", ';');
+            CustomLocalizationManager.ImportCSV("influka/Touhou.csv", ';');
             clanRef = TouhouClan.Make();
 
             Marisa.Make();
