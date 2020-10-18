@@ -23,7 +23,7 @@ namespace RetrospectiveUnknownVoyage
                     "influka/Clan/ClanLogo_92.png", // Clan Choice Icon
                     "influka/Clan/ClanLogo_92.png", // Also compendium...? 56x56
                     "influka/Clan/ClanLogo_92.png", // Large Coloured Icon
-                    "influka/Clan/ClanLogo_silhouette.png", // Compendium Silhouette 56x56
+                    "influka/Clan/ClanLogo_Silhouette.png", // Compendium Silhouette 56x56
                 },
 
                 CardFrameUnitPath = "influka/Clan/unit-cardframe-touhou.png",
