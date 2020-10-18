@@ -4,6 +4,7 @@ using MonsterTrainModdingAPI.Builders;
 using MonsterTrainModdingAPI.Managers;
 using System.Collections.Generic;
 using static MonsterTrainModdingAPI.Constants.VanillaCardPoolIDs;
+using RetrospectiveUnknownVoyage.Cards;
 
 namespace RetrospectiveUnknownVoyage.Champions
 {
@@ -18,6 +19,7 @@ namespace RetrospectiveUnknownVoyage.Champions
                 Champion = BuildUnit(),
                 ChampionIconPath = "influka/Clan/Icon_ClassSelect_Reimu.png",
                 ChampionSelectedCue = "",
+                StarterCardData = CustomCardManager.GetCardDataByID(AliceGift.ID),
                 //StarterCardData
                 CardID = ID,
                 NameKey = ID + "_Name",

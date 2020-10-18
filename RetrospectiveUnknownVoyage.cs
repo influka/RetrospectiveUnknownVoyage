@@ -35,32 +35,13 @@ namespace RetrospectiveUnknownVoyage
             CustomLocalizationManager.ImportCSV("influka/Touhou.csv", ';');
             clanRef = TouhouClan.Make();
 
+            AliceGift.Make();
+            Alice.Make();
+
             Marisa.Make();
             Reimu.Make();
 
-            AliceGift.Make();
-            Alice.Make();
-            //RegisterSubtypes();
-            //MakeStatuses();
-            //MakeEnhancers();
-
-            //MakeCards();
-
-            //foreach (var bundle in BundleManager.LoadedAssetBundles)
-            //{
-            //    API.Log(BepInEx.Logging.LogLevel.All, bundle.Value.GetAllAssetNames().Join());
-            //}
-
-            //SecondDisciple.Make();
-            //Disciple.Make();
-            //Clan.RegisterBanner();
-            //MakeArtifacts();
-
-            //PrintCardStats();
-            //foreach (SubtypeData s in SubtypeManager.AllData)
-            //{
-            //    API.Log(BepInEx.Logging.LogLevel.All, "Subtype: " + s.LocalizedName + " - Key: " + s.Key);
-            //}
+            TouhouClan.RegisterBanner();
         }
         public static ClassData getClan() { return clanRef; }
     }

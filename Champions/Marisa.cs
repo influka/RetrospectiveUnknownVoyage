@@ -4,6 +4,8 @@ using MonsterTrainModdingAPI.Builders;
 using MonsterTrainModdingAPI.Managers;
 using System.Collections.Generic;
 using static MonsterTrainModdingAPI.Constants.VanillaCardPoolIDs;
+using RetrospectiveUnknownVoyage.Cards;
+using RetrospectiveUnknownVoyage.Characters;
 
 namespace RetrospectiveUnknownVoyage.Champions
 {
@@ -18,7 +20,7 @@ namespace RetrospectiveUnknownVoyage.Champions
                 Champion = BuildUnit(),
                 ChampionIconPath = "influka/Clan/Icon_ClassSelect_Marisa.png",
                 ChampionSelectedCue = "",
-                //StarterCardData
+                StarterCardData = CustomCardManager.GetCardDataByID(Alice.ID),
                 CardID = ID,
                 NameKey = ID + "_Name",
                 OverrideDescriptionKey = ID + "_Desc",

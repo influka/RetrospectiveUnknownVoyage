@@ -131,3 +131,10 @@ $RECYCLE.BIN/
 .DS_Store
 
 _NCrunch*
+.vs/RetrospectiveUnknownVoyage/v16/.suo
+.vs/RetrospectiveUnknownVoyage/v16/Server/sqlite3/storage.ide-shm
+.vs/RetrospectiveUnknownVoyage/v16/Server/sqlite3/storage.ide-wal
+.vs/RetrospectiveUnknownVoyage/v16/.suo
+obj/Debug/RetrospectiveUnknownVoyage.pdb
+obj/Debug/RetrospectiveUnknownVoyage.dll
+.vs/RetrospectiveUnknownVoyage/v16/.suo
