@@ -11,6 +11,7 @@ using UnityEngine;
 using RetrospectiveUnknownVoyage.Champions;
 using RetrospectiveUnknownVoyage.Characters;
 using RetrospectiveUnknownVoyage.Cards;
+using BepInEx.Logging;
 
 namespace RetrospectiveUnknownVoyage
 {
@@ -24,6 +25,7 @@ namespace RetrospectiveUnknownVoyage
         public const string MODNAME = "Retrospective Unknown Voyage";
         public const string VERSION = "0.0";
         private static ClassData clanRef;
+        public static readonly ManualLogSource Log = BepInEx.Logging.Logger.CreateLogSource(MODNAME);
         void Awake()
         {
             var harmony = new Harmony(MODGUID);
