@@ -1,7 +1,6 @@
 C:\Program Files (x86)\Steam\steamapps\workshop\content\1102190\RetrospectiveUnknownVoyage\plugins\RetrospectiveUnknownVoyage.deps.json
 C:\Program Files (x86)\Steam\steamapps\workshop\content\1102190\RetrospectiveUnknownVoyage\plugins\RetrospectiveUnknownVoyage.dll
 C:\Program Files (x86)\Steam\steamapps\workshop\content\1102190\RetrospectiveUnknownVoyage\plugins\RetrospectiveUnknownVoyage.pdb
-C:\quarantine\RetrospectiveUnknownVoyage\obj\Debug\RetrospectiveUnknownVoyage.csprojAssemblyReference.cache
 C:\quarantine\RetrospectiveUnknownVoyage\obj\Debug\RetrospectiveUnknownVoyage.AssemblyInfoInputs.cache
 C:\quarantine\RetrospectiveUnknownVoyage\obj\Debug\RetrospectiveUnknownVoyage.AssemblyInfo.cs
 C:\quarantine\RetrospectiveUnknownVoyage\obj\Debug\RetrospectiveUnknownVoyage.dll
