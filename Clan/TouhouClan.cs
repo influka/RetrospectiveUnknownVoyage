@@ -16,7 +16,7 @@ namespace RetrospectiveUnknownVoyage
             ClassDataBuilder clan = new ClassDataBuilder
             {
                 ClassID = ID,
-                DraftIconPath = "influka/Clan/Icon_CardBack_touhou.png",
+                DraftIconPath = "influka/Clan/Icon_CardBack_Touhou.png",
 
                 IconAssetPaths = new List<string>
                 {
