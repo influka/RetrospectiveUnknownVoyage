@@ -11,6 +11,7 @@ using UnityEngine;
 using RetrospectiveUnknownVoyage.Champions;
 using RetrospectiveUnknownVoyage.Characters;
 using RetrospectiveUnknownVoyage.Cards;
+using RetrospectiveUnknownVoyage.Relics;
 using BepInEx.Logging;
 
 namespace RetrospectiveUnknownVoyage
@@ -44,6 +45,7 @@ namespace RetrospectiveUnknownVoyage
             Reimu.Make();
 
             TouhouClan.RegisterBanner();
+            TouhouPlaceholder.Make();
         }
         public static ClassData getClan() { return clanRef; }
     }

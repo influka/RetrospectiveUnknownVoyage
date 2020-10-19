@@ -5,6 +5,7 @@ using MonsterTrainModdingAPI.Managers;
 using System.Collections.Generic;
 using static MonsterTrainModdingAPI.Constants.VanillaCardPoolIDs;
 using RetrospectiveUnknownVoyage.Cards;
+using RetrospectiveUnknownVoyage.Upgrades.Reimu;
 
 namespace RetrospectiveUnknownVoyage.Champions
 {
@@ -41,59 +42,69 @@ namespace RetrospectiveUnknownVoyage.Champions
             {
 
                 //Borderline 1:
-	                // + 5 Attack
-                    // + Incant: Gain Damage Shield 1
+                // + 4 Attack
+                // + Incant: Gain Damage Shield 1
 
                 //Borderline 2:
-	               // + 15 Attack
-                   // + Incant: Gain Damage Shield 2
+                // + 5 Attack
+                // + Incant: Gain Damage Shield 2
 
                 //Borderline 3:
-	               // + 30 Attack
-                   // + Incant: Gain Damage Shield 3
+                // + 6 Attack
+                // + Incant: Gain Damage Shield 3
 
                 //Fantasy_Sealer 1:
-	               // +10 Health
-	               // + Action: If an enemy has 40 HP or less, kill it
+                // +10 Health
+                // + Action: If an enemy has 40 HP or less, kill it
 
                 //Fantasy - Sealer 2:
-	               // + 20 Health
-	               // + Action: If an enemy has 60 HP or less, kill it
+                // + 20 Health
+                // + Action: If an enemy has 60 HP or less, kill it
 
                 //Fantasy - Sealer 3:
-	               // + 35 Health
-                   // + Action: If an enemy has 100 HP or less, kill it
+                // + 35 Health
+                // + Action: If an enemy has 100 HP or less, kill it
 
                 //Youkai Hunter 1:
-	               // + 20 Attack
-                   //  + 10 Health
-                   // + Extinguish: Gain 3 Gold
+                // + 20 Attack
+                //  + 10 Health
+                // + Extinguish: Gain 3 Gold
 
                 //Youkai Hunter 2:
-	               // + 45 Attack
-                   // + 20 Health
-                   // + Extinguish : Gain 4 Gold
+                // + 45 Attack
+                // + 20 Health
+                // + Extinguish : Gain 4 Gold
 
                 //Youkai Hunter 3:
-	               // + 95 Attack
-                   // + 30 Health
-                   // + Extinguish : Gain 5 Gold
+                // + 95 Attack
+                // + 30 Health
+                // + Extinguish : Gain 5 Gold
 
-               UpgradeTrees = new List<List<CardUpgradeDataBuilder>>
+                UpgradeTrees = new List<List<CardUpgradeDataBuilder>>
                 {
 
                     new List<CardUpgradeDataBuilder>
                     {
+                        BorderlineNormal.Builder(),
+                        BorderlineHard.Builder(),
+                        BorderlineLunatic.Builder(),
+
                         // Borderline
                     
                     },
                     new List<CardUpgradeDataBuilder>
                     {
                         // Fantasy-Sealer
+                        BorderlineNormal.Builder(),
+                        BorderlineHard.Builder(),
+                        BorderlineLunatic.Builder(),
                     },
                     new List<CardUpgradeDataBuilder>
                     {
                         // Youkai Hunter
+                        BorderlineNormal.Builder(),
+                        BorderlineHard.Builder(),
+                        BorderlineLunatic.Builder(),
                     }
                 }
             };

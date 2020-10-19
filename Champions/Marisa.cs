@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using static MonsterTrainModdingAPI.Constants.VanillaCardPoolIDs;
 using RetrospectiveUnknownVoyage.Cards;
 using RetrospectiveUnknownVoyage.Characters;
+using RetrospectiveUnknownVoyage.Upgrades.Reimu;
 
 namespace RetrospectiveUnknownVoyage.Champions
 {
@@ -41,25 +42,49 @@ namespace RetrospectiveUnknownVoyage.Champions
             {
                 UpgradeTrees = new List<List<CardUpgradeDataBuilder>>
                 {
-                    new List<CardUpgradeDataBuilder>
-                    {
-                        // SpellCaster:
-                        // Resolve: Add "Master Spark" to your hand.
-                        // +20 (40) (60) Health
+                    //new List<CardUpgradeDataBuilder>
+                    //{
+                    //    // SpellCaster:
+                    //    // Resolve: Add "Master Spark" to your hand.
+                    //    // +20 (40) (60) Health
                         
+                    //},
+                    //new List<CardUpgradeDataBuilder>
+                    //{
+                    //    // Charge-Up
+                    //    // Multistrike 1 (2) (3)
+                    //    // Strike: Double Marisa's attack
+                    //},
+                    //new List<CardUpgradeDataBuilder>
+                    //{
+                    //    // Thief
+                    //    // + 20 (45) (95) Attack
+                    //    // + 10 Health + 20 + 30 Health
+                    //    // Extinguish : Gain a random Artifact.
+                    //}
+
+                    new List<CardUpgradeDataBuilder>
+                    {
+                        BorderlineNormal.Builder(),
+                        BorderlineHard.Builder(),
+                        BorderlineLunatic.Builder(),
+
+                        // Borderline
+                    
                     },
                     new List<CardUpgradeDataBuilder>
                     {
-                        // Charge-Up
-                        // Multistrike 1 (2) (3)
-                        // Strike: Double Marisa's attack
+                        // Fantasy-Sealer
+                        BorderlineNormal.Builder(),
+                        BorderlineHard.Builder(),
+                        BorderlineLunatic.Builder(),
                     },
                     new List<CardUpgradeDataBuilder>
                     {
-                        // Thief
-                        // + 20 (45) (95) Attack
-                        // + 10 Health + 20 + 30 Health
-                        // Extinguish : Gain a random Artifact.
+                        // Youkai Hunter
+                        BorderlineNormal.Builder(),
+                        BorderlineHard.Builder(),
+                        BorderlineLunatic.Builder(),
                     }
                 }
             };
