@@ -41,18 +41,6 @@ namespace RetrospectiveUnknownVoyage.Champions
             CardUpgradeTreeDataBuilder cardUpgradeTreeDataBuilder = new CardUpgradeTreeDataBuilder
             {
 
-                //Borderline 1:
-                // + 4 Attack
-                // + Incant: Gain Damage Shield 1
-
-                //Borderline 2:
-                // + 5 Attack
-                // + Incant: Gain Damage Shield 2
-
-                //Borderline 3:
-                // + 6 Attack
-                // + Incant: Gain Damage Shield 3
-
                 //Fantasy_Sealer 1:
                 // +10 Health
                 // + Action: If an enemy has 40 HP or less, kill it
@@ -85,6 +73,15 @@ namespace RetrospectiveUnknownVoyage.Champions
 
                     new List<CardUpgradeDataBuilder>
                     {
+                        //Borderline 1:
+                        // + Incant: Gain Damage Shield 1
+
+                        //Borderline 2:
+                        // + Incant: Gain Damage Shield 2
+
+                        //Borderline 3:
+                        // + Incant: Gain Damage Shield 3
+
                         BorderlineNormal.Builder(),
                         BorderlineHard.Builder(),
                         BorderlineLunatic.Builder(),

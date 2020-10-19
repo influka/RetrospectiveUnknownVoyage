@@ -18,7 +18,7 @@ namespace RetrospectiveUnknownVoyage.Upgrades.Reimu
                 UpgradeTitleKey = IDName + "_Name",
                 UpgradeDescriptionKey = IDName + "_Desc",
                 UseUpgradeHighlightTextTags = true,
-                BonusDamage = 6,
+                //BonusDamage = 6,
 
                 //traitDataUpgradeBuilders = new List<CardTraitDataBuilder> { },
                 TriggerUpgradeBuilders = new List<CharacterTriggerDataBuilder>

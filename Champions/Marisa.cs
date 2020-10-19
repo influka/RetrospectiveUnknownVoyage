@@ -34,7 +34,7 @@ namespace RetrospectiveUnknownVoyage.Champions
                 UpgradeTree = GetUpgradeTreeDataBuilder(),
             };
             AssetAdder.AddImg(championCardDataBuilder, ID);
-            return championCardDataBuilder.BuildAndRegister();
+            return championCardDataBuilder.BuildAndRegister(1);
         }
         public static CardUpgradeTreeDataBuilder GetUpgradeTreeDataBuilder()
         {
