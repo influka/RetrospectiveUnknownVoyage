@@ -1,12 +1,11 @@
 ﻿using BepInEx.Logging;
-using MonsterTrainModdingAPI;
-using MonsterTrainModdingAPI.Builders;
-using MonsterTrainModdingAPI.Managers;
 using System.Collections.Generic;
-using static MonsterTrainModdingAPI.Constants.VanillaCardPoolIDs;
+using static Trainworks.Constants.VanillaCardPoolIDs;
 using RetrospectiveUnknownVoyage.Cards;
-using RetrospectiveUnknownVoyage.Characters;
 using RetrospectiveUnknownVoyage.Upgrades.Reimu;
+using RetrospectiveUnknownVoyage.Upgrades.Marisa;
+using Trainworks.Builders;
+using Trainworks.Managers;
 
 namespace RetrospectiveUnknownVoyage.Champions
 {
@@ -21,7 +20,7 @@ namespace RetrospectiveUnknownVoyage.Champions
                 Champion = BuildUnit(),
                 ChampionIconPath = "influka/Clan/Icon_ClassSelect_Marisa.png",
                 ChampionSelectedCue = "",
-                StarterCardData = CustomCardManager.GetCardDataByID(Alice.ID),
+                StarterCardData = CustomCardManager.GetCardDataByID(AliceGift.ID),
                 CardID = ID,
                 NameKey = ID + "_Name",
                 OverrideDescriptionKey = ID + "_Desc",
@@ -45,7 +44,7 @@ namespace RetrospectiveUnknownVoyage.Champions
                     //new List<CardUpgradeDataBuilder>
                     //{
                     //    // SpellCaster:
-                    //    // Resolve: Add "Master Spark" to your hand.
+                    //    // Incant: Gain 1 Spell Power
                     //    // +20 (40) (60) Health
                         
                     //},
@@ -101,6 +100,16 @@ namespace RetrospectiveUnknownVoyage.Champions
                 Size = 2,
                 Health = 10,
                 AttackDamage = 5,
+
+                RoomModifierBuilders = new List<RoomModifierDataBuilder>
+                {
+                    new RoomModifierDataBuilder
+                    {
+                        roomStateModifierClassType = typeof(RoomStateMagicalPowerModifier),
+                        ParamInt = 0
+                    }
+                }
+
             };
 
             AssetAdder.AddUnitImg(characterDataBuilder, ID);

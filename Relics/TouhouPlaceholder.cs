@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-using MonsterTrainModdingAPI.Builders;
+using Trainworks.Builders;
 using System.Collections.Generic;
-using static MonsterTrainModdingAPI.Constants.VanillaRelicPoolIDs;
+using static Trainworks.Constants.VanillaRelicPoolIDs;
 
 namespace RetrospectiveUnknownVoyage.Relics
 {

@@ -1,9 +1,9 @@
 ﻿using HarmonyLib;
-using MonsterTrainModdingAPI.Builders;
-using MonsterTrainModdingAPI.Managers;
+using Trainworks.Builders;
+using Trainworks.Managers;
 using System.Collections.Generic;
 using UnityEngine;
-using static MonsterTrainModdingAPI.Constants.VanillaCardPoolIDs;
+using static Trainworks.Constants.VanillaCardPoolIDs;
 
 namespace RetrospectiveUnknownVoyage
 {

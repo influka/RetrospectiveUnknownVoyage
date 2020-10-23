@@ -1,11 +1,11 @@
 ﻿using BepInEx.Logging;
-using MonsterTrainModdingAPI;
-using MonsterTrainModdingAPI.Builders;
-using MonsterTrainModdingAPI.Managers;
 using System.Collections.Generic;
-using static MonsterTrainModdingAPI.Constants.VanillaCardPoolIDs;
+using static Trainworks.Constants.VanillaCardPoolIDs;
 using RetrospectiveUnknownVoyage.Cards;
 using RetrospectiveUnknownVoyage.Upgrades.Reimu;
+using RetrospectiveUnknownVoyage.Upgrades.Marisa;
+using Trainworks.Builders;
+using Trainworks.Managers;
 
 namespace RetrospectiveUnknownVoyage.Champions
 {
@@ -82,7 +82,7 @@ namespace RetrospectiveUnknownVoyage.Champions
                         //Borderline 3:
                         // + Incant: Gain Damage Shield 3
 
-                        BorderlineNormal.Builder(),
+                        SpellcasterNormal.Builder(),
                         BorderlineHard.Builder(),
                         BorderlineLunatic.Builder(),
 

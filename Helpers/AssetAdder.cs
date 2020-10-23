@@ -1,8 +1,7 @@
-﻿using MonsterTrainModdingAPI;
-using MonsterTrainModdingAPI.Builders;
-using MonsterTrainModdingAPI.Utilities;
+﻿
 using System.Collections.Generic;
-using static MonsterTrainModdingAPI.Constants.VanillaCardPoolIDs;
+using Trainworks.Builders;
+using static Trainworks.Constants.VanillaCardPoolIDs;
 
 namespace RetrospectiveUnknownVoyage
 {
@@ -25,10 +24,6 @@ namespace RetrospectiveUnknownVoyage
 
             r.AssetPath = rootPath + scardPath;
 
-            if (!r.NameKey.HasTranslation())
-                API.Log(BepInEx.Logging.LogLevel.All, r.NameKey + ",Text,,,,," + r.CardID + ",,,,,");
-            if (!r.OverrideDescriptionKey.HasTranslation())
-                API.Log(BepInEx.Logging.LogLevel.All, r.OverrideDescriptionKey + ",Text,,,,,<desc>,,,,,");
 
             //API.Log(BepInEx.Logging.LogLevel.All, string.Join("\t", new string[] { "Spell", r.NameKey.Localize(), r.Rarity.ToString(), r.Cost.ToString(), r.OverrideDescriptionKey.Localize() }));
         }
@@ -44,14 +39,6 @@ namespace RetrospectiveUnknownVoyage
             r.Rarity = CollectableRarity.Common;
             r.IsBossGivenRelic = false;
 
-            if (!r.NameKey.HasTranslation())
-                API.Log(BepInEx.Logging.LogLevel.All, r.NameKey + ",Text,,,,," + ID + ",,,,,");
-            if (!r.DescriptionKey.HasTranslation())
-                API.Log(BepInEx.Logging.LogLevel.All, r.DescriptionKey + ",Text,,,,,<desc>,,,,,");
-            if (!r.RelicActivatedKey.HasTranslation())
-                API.Log(BepInEx.Logging.LogLevel.All, r.RelicActivatedKey + ",Text,,,,,<desc>,,,,,");
-            if (!r.RelicLoreTooltipKeys[0].HasTranslation())
-                API.Log(BepInEx.Logging.LogLevel.All, r.RelicLoreTooltipKeys[0] + ",Text,,,,,<desc>,,,,,");
         }
 
         public static void AddUnit(CardDataBuilder r, string IDName, CharacterData character)
@@ -73,11 +60,6 @@ namespace RetrospectiveUnknownVoyage
                     TargetMode = TargetMode.DropTargetCharacter,
                     ParamCharacterData = character,
                 });
-
-            if (!r.NameKey.HasTranslation())
-                API.Log(BepInEx.Logging.LogLevel.All, r.NameKey + ",Text,,,,," + r.CardID + ",,,,,");
-            if (!r.OverrideDescriptionKey.HasTranslation())
-                API.Log(BepInEx.Logging.LogLevel.All, r.OverrideDescriptionKey + ",Text,,,,,<desc>,,,,,");
 
             //API.Log(BepInEx.Logging.LogLevel.All, string.Join("\t", new string[] { "Unit", r.NameKey.Localize(), r.Rarity.ToString(), r.Cost.ToString(), character.GetSize().ToString(), character.GetHealth().ToString(), character.GetAttackDamage().ToString(), character.GetLocalizedSubtype(), r.OverrideDescriptionKey.Localize() }));
         }

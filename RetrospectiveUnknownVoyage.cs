@@ -1,8 +1,8 @@
 ﻿using BepInEx;
 using HarmonyLib;
-using MonsterTrainModdingAPI;
-using MonsterTrainModdingAPI.Interfaces;
-using MonsterTrainModdingAPI.Managers;
+using Trainworks;
+using Trainworks.Interfaces;
+using Trainworks.Managers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +12,7 @@ using RetrospectiveUnknownVoyage.Champions;
 using RetrospectiveUnknownVoyage.Characters;
 using RetrospectiveUnknownVoyage.Cards;
 using RetrospectiveUnknownVoyage.Relics;
+using RetrospectiveUnknownVoyage.Statuses;
 using BepInEx.Logging;
 
 namespace RetrospectiveUnknownVoyage
@@ -35,8 +36,11 @@ namespace RetrospectiveUnknownVoyage
 
         public void Initialize()
         {
+
             CustomLocalizationManager.ImportCSV("influka/Touhou.csv", ';');
             clanRef = TouhouClan.Make();
+
+            StatusEffectMarisaMagic.Make();
 
             AliceGift.Make();
             Alice.Make();
@@ -46,6 +50,7 @@ namespace RetrospectiveUnknownVoyage
 
             TouhouClan.RegisterBanner();
             TouhouPlaceholder.Make();
+
         }
         public static ClassData getClan() { return clanRef; }
     }
